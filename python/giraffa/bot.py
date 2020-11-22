@@ -1,16 +1,34 @@
 #----------------------------------------------------------------------------------------------------------
 import discord
+import os
 from discord.ext import commands
 #----------------------------------------------------------------------------------------------------------
-from . import cmds_fun
-#----------------------------------------------------------------------------------------------------------
-from . import attributes as AT
+from secret import secrets
 #----------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------
-giraffa = commands.Bot( command_prefix=AT.GIRAFFA_CMD_PREFIX )
+giraffa = commands.Bot( command_prefix=['e! ', 'e!',  'giraffa ', 'giraffa'] )
 #----------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------
-# >>> EVENT CALLS
+# >>> MODULE HANDLING
+#----------------------------------------------------------------------------------------------------------
+@giraffa.command()
+@commands.has_permissions(administrator=True)
+async def load(ctx, moduleName):
+    giraffa.load_extension(f'{moduleName}.cog')
+#----------------------------------------------------------------------------------------------------------
+@giraffa.command()
+@commands.has_permissions(administrator=True)
+async def unload(ctx, moduleName):
+    giraffa.unload_extension(f'{moduleName}.cog')
+#----------------------------------------------------------------------------------------------------------
+@giraffa.command()
+@commands.has_permissions(administrator=True)
+async def reload(ctx, moduleName=None):
+    if moduleName: giraffa.reload_extension(f'{moduleName}.cog')
+    else:
+        for module in list(giraffa.extensions): giraffa.reload_extension(f'{module}')
+#----------------------------------------------------------------------------------------------------------
+# >>> EVENT EXAMPLES
 #----------------------------------------------------------------------------------------------------------
 @giraffa.event
 async def on_ready():
@@ -24,29 +42,12 @@ async def  on_member_join(member):
 async def  on_member_remove(member):
     print('{} has left the server'.format(member))
 #----------------------------------------------------------------------------------------------------------
-# >>> CMDS UTILITY
 #----------------------------------------------------------------------------------------------------------
-@giraffa.command()
-async def purge(ctx, limit=1):
-    await ctx.channel.purge(limit=limit+1)
+# >>> STARTUP
 #----------------------------------------------------------------------------------------------------------
-
+for subDir in next(os.walk('.'))[1]:
+    if os.path.isfile(f'./{subDir}/cog.py'):
+        giraffa.load_extension( f'{subDir}.cog' )
 #----------------------------------------------------------------------------------------------------------
-# >>> CMDS FUN
+giraffa.run(secrets.BOT_TOKEN)
 #----------------------------------------------------------------------------------------------------------
-@giraffa.command()
-async def ask(ctx, *, question=None):
-    await cmds_fun.ask.ask.cmd( ctx, question )
-#----------------------------------------------------------------------------------------------------------
-@giraffa.command()
-async def choose(ctx, *, options=None):
-    await cmds_fun.ask.ask.choose(ctx, options)
-#----------------------------------------------------------------------------------------------------------
-@giraffa.command()
-async def harro(ctx):
-    await ctx.send('EEEEEEEEEEEEEEEEEEE! <3')
-#----------------------------------------------------------------------------------------------------------
-
-#----------------------------------------------------------------------------------------------------------
-def start():
-    giraffa.run(AT.GIRAFFA_BOT_TOKEN)
