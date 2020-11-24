@@ -1,6 +1,6 @@
 {
   "name": "Christmas Game Order",
-  "banner": false,
+  "banner": "https://github.com/FoCTow/DiscordServer/blob/master/assets/banners/christmas/Banner_Game_Order.png?raw=true",
   "closes": "26 11 2020",
   "available": 17,
   "games":

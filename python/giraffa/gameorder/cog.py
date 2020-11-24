@@ -48,12 +48,26 @@ class Gameorder( commands.Cog ):
         #await ctx.send(AT.TEST)
         x = {
             "content": "Hello, World!",
-            "tts": False,
+
+            #"tts": False,
             "embed": {
+                "color": 3355443,
                 "title": "Hello, Embed!",
+                "image": { "url": "https://github.com/FoCTow/DiscordServer/blob/master/assets/banners/christmas/Banner_Game_Order.png?raw=true", "width":.5 },
                 "description": "This is an embedded message."
             }
         }
+
+        embeds = [
+            {
+                "color": 3355443,
+                "image": {"url": "https://github.com/FoCTow/DiscordServer/blob/master/assets/banners/christmas/Banner_Game_Order.png?raw=true"},
+            },
+            {
+                "color": 3355443,
+                "image": {"url": ""},
+            },
+        ]
         embed = discord.Embed.from_dict(x["embed"])
         await ctx.send( embed=embed )
     #------------------------------------------------------------------------------------------------------
@@ -84,7 +98,7 @@ class Gameorder( commands.Cog ):
             embeds[-1] += f'{unavailable*"~~"}`{(10>i)*" "}{i} | {number}x {name}{(58-len(name))*" "}{(10>price)*" "}{price}0 €`{unavailable*"~~"}\n'
         #--------------------------------------------------------------------------------------------------
         for string in embeds:
-            embed = discord.Embed.from_dict( {"description":string} )
+            embed = discord.Embed.from_dict( {"description":string, "color": 3355443} )
             await ctx.send( embed=embed )
     #------------------------------------------------------------------------------------------------------
     @commands.command()
