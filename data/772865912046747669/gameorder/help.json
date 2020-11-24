@@ -1,0 +1,11 @@
+{
+  "embeds": [
+    {
+      "description": "<a:kawaiiBowPink:690260300561252439>✧･ﾟ: *✧･ﾟ: 𓂂<a:aa_x:721252515575758850><a:aa_m:721134078996512898><a:aa_a:721110543980822559><a:aa_s:721138897425268826>𓂂<a:aa_o:721134184281800727><a:aa_r:721246438981632050><a:aa_d:721115619453304924><a:aa_e:721115687640367245><a:aa_r:721246438981632050>𓂂<a:aa_i:721141123862757496><a:aa_n:721134102421569566><a:aa_f:721116180664025229><a:aa_o:721134184281800727>𓂂 :･ﾟ✧*:･ﾟ✧<a:kawaiiBowPink:690260300561252439>\n\n<a:aa_exclemation:721133798024020038> **Rules** <a:aa_exclemation:721133798024020038>\n```Please make sure you have read and accepted the xmas game order info in the game order channel```\n\n<a:bb_pink_arrow:721937416411152394> **How to Order**\n\n`giraffa order` :: displays the list of available games\nThe  first number per row is the ID that will be used for ordering.\n\n`giraffa orderadd <ID>` :: this will add the game to your order\n\n`giraffa orderremove <ID>` :: will remove the game from you order\n\n`giraffa myorder` :: this will show you a summary of your order",
+      "color": 2632496,
+      "image": {
+        "url": "https://github.com/FoCTow/DiscordServer/blob/master/assets/separators/kawaiiline/SeparatorLong_02.gif?raw=true"
+      }
+    }
+  ]
+}
