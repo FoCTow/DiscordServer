@@ -28,6 +28,18 @@ async def reload(ctx, moduleName=None):
     else:
         for module in list(giraffa.extensions): giraffa.reload_extension(f'{module}')
 #----------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------
+# >>> ERROR HANDLING
+#----------------------------------------------------------------------------------------------------------
+@giraffa.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CheckFailure):
+        await ctx.send(":warning:  EEEEEEEEE? - It appears you are missing permission to run this command")
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send(":grey_exclamation:  BLLEEGG... - It appears this command was missing arguments")
+    else: raise error
+#----------------------------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------
 # >>> EVENT EXAMPLES
 #----------------------------------------------------------------------------------------------------------
 @giraffa.event

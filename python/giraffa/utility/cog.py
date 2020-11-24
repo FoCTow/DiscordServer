@@ -8,6 +8,7 @@ class Utility( commands.Cog ):
         self.giraffa = giraffa
     #------------------------------------------------------------------------------------------------------
     @commands.command()
+    @commands.has_permissions(manage_messages=True)
     async def purge(self, ctx, limit=1):
         await ctx.channel.purge(limit=limit+1)
 #----------------------------------------------------------------------------------------------------------
