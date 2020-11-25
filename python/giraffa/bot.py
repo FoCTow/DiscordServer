@@ -40,9 +40,11 @@ async def run(ctx, *, cmd):
 @giraffa.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CheckFailure):
-        await ctx.send(":warning:  EEEEEEEEE? - It appears you are missing permission to run this command")
+        await ctx.send(":warning:  EEEEEEEEE? - It appears you are missing permission to run this command", delete_after=3)
     elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send(":grey_exclamation:  BLLEEGG... - It appears this command was missing arguments")
+        await ctx.send(":grey_exclamation:  BLLEEGG... - It appears this command was missing arguments", delete_after=3)
+    elif isinstance(error, commands.CommandNotFound):
+        await ctx.send(":grey_question:  EE?? - Giraffa is confused... That is not a valid command", delete_after=3)
     else: raise error
 #----------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------
@@ -50,6 +52,7 @@ async def on_command_error(ctx, error):
 #----------------------------------------------------------------------------------------------------------
 @giraffa.event
 async def on_ready():
+    await giraffa.change_presence(status=discord.Status.online, activity=discord.Game("Santa"))
     print('We have logged in as {0.user}'.format( giraffa ) )
 #----------------------------------------------------------------------------------------------------------
 @giraffa.event

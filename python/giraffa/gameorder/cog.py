@@ -83,14 +83,6 @@ class Gameorder( commands.Cog ):
     async def gameorderlist( self, ctx ):
         pass
     #------------------------------------------------------------------------------------------------------
-    ##------------------------------------------------------------------------------------------------------
-    @commands.command()
-    async def test( self, ctx ):
-        await ctx.author.send(AT.MSG_ORDER_ADD_SUCCESS.format("PSX - stell dir vor das sei ein spiel"))
-        #await ctx.send( "<a:ab_a:780841271592747009>" )
-        #await ctx.send( "<a:BanaNya:773671173627969576>" )
-        #await ctx.send( "<a:ezgif42ee28b6f7860:772578058569252925>" )
-    ##------------------------------------------------------------------------------------------------------
     #------------------------------------------------------------------------------------------------------
     @commands.command()
     async def orderlist(self, ctx):
@@ -123,7 +115,7 @@ class Gameorder( commands.Cog ):
             embed = discord.Embed.from_dict({"description":string, "color":3355443})
             await ctx.send( embed=embed )
     #------------------------------------------------------------------------------------------------------
-    @commands.command()
+    @commands.command(aliases=['ordermy'])
     async def myorder( self, ctx ):
         #--------------------------------------------------------------------------------------------------
         dataDIR = await self.getServerData(ctx)
@@ -156,7 +148,7 @@ class Gameorder( commands.Cog ):
         post = discord.Embed.from_dict(embed)
         await ctx.send(embed=post)
     #------------------------------------------------------------------------------------------------------
-    @commands.command()
+    @commands.command(aliases=['orderrules'])
     async def orderinfo( self, ctx ):
         #--------------------------------------------------------------------------------------------------
         dataDIR = await self.getServerData( ctx )
@@ -171,7 +163,7 @@ class Gameorder( commands.Cog ):
             embed = discord.Embed.from_dict(embedDATA)
             await ctx.send( embed=embed )
     #------------------------------------------------------------------------------------------------------
-    @commands.command()
+    @commands.command(aliases=['ordercommands','orderhelp'])
     async def ordercmds( self, ctx ):
         #--------------------------------------------------------------------------------------------------
         dataDIR = await self.getServerData( ctx )
@@ -186,7 +178,7 @@ class Gameorder( commands.Cog ):
             embed = discord.Embed.from_dict( embedDATA )
             await ctx.send( embed=embed )
     #------------------------------------------------------------------------------------------------------
-    @commands.command()
+    @commands.command(aliases=['orderaccept'])
     async def orderagree( self, ctx ):
         #--------------------------------------------------------------------------------------------------
         dataDIR = await self.getServerData(ctx)

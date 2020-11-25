@@ -1,58 +1,302 @@
 {
-  "name": "XMAS GAME ORDER",
-  "banner": false,
-  "closes": "26 11 2020",
-  "available": 17,
-  "games":
-  [
-    {"name":"PC - Anno 1800 Königsedition GER USK", "price": 5, "available": 3, "availableID": 1},
-    {"name":"PC - Anno 1800 Sonderausgabe Edition GER USK", "price": 5, "available": 3, "availableID": 2},
-    {"name":"PC - Anno History Edition GER USK", "price": 5, "available": 3, "availableID": 3},
-    {"name":"PC - Assassin's Creed Valhalla GER USK", "price": 5, "available": 2, "availableID": 4},
-    {"name":"PC - Immortals Fenyx Rising GER USK", "price": 5, "available": 3, "availableID": 5},
-    {"name":"PC - Watch Dogs Legion GER USK", "price": 5, "available": 3, "availableID": 6},
-    {"name":"PS4 - Assassin's Creed Odyssey GER USK", "price": 12.5, "available": 3, "availableID": 7},
-    {"name":"PS4 - Assassin's Creed Rouge HD GER", "price": 12.5, "available": 3, "availableID": 8},
-    {"name":"PS4 - Assassin's Creed Valhalla GER USK", "price": 12.5, "available": 2, "availableID": 9},
-    {"name":"PS4 - Assassin's Creed Valhalla Ultimate GER USK", "price": 15, "available": 2, "availableID": 9},
-    {"name":"PS4 - Compil Assasin's Creed Origins+Odyssey GER USK", "price": 20, "available": 3, "availableID": 10},
-    {"name":"PS4 - Far Cry 5 GER USK", "price": 12.5, "available": 3, "availableID": 11},
-    {"name":"PS4 - Ghost Recon Breakpoint GER USK", "price": 12.5, "available": 3, "availableID": 12},
-    {"name":"PS4 - Immortals Fenyx Rising GER USK", "price": 12.5, "available": 3, "availableID": 13},
-    {"name":"PS4 - Immortals Fenyx Rising Gold GER USK", "price": 15, "available": 3, "availableID": 13},
-    {"name":"PS4 - Just Dance 2020 GER USK", "price": 12.5, "available": 3, "availableID": 14},
-    {"name":"PS4 - Just Dance 2021 GER USK", "price": 12.5, "available": 3, "availableID": 15},
-    {"name":"PS4 - South Park The Fractured But Whole GER USK", "price": 12.5, "available": 3, "availableID": 16},
-    {"name":"PS4 - Steep X Games Gold GER USK", "price": 12.5, "available": 3, "availableID": 17},
-    {"name":"PS4 - Watch Dogs Legion GER USK", "price": 12.5, "available": 2, "availableID": 18},
-    {"name":"PS4 - Watch Dogs Legion Ultimate GER USK", "price": 15, "available": 2, "availableID": 18},
-    {"name":"PS5 - Assassin's Creed Valhalla GER USK", "price": 12.5, "available": 3, "availableID": 19},
-    {"name":"PS5 - Assassin's Creed Valhalla Ultimate GER USK", "price": 15, "available": 3, "availableID": 19},
-    {"name":"PS5 - Immortals Fenyx Rising GER USK", "price": 12.5, "available": 3, "availableID": 20},
-    {"name":"PS5 - Immortals Fenyx Rising Gold GER USK", "price": 15, "available": 3, "availableID": 20},
-    {"name":"PS5 - Just Dance 2021 GER USK", "price": 12.5, "available": 3, "availableID": 21},
-    {"name":"PS5 - Watch Dogs Legion GER USK", "price": 12.5, "available": 3, "availableID": 22},
-    {"name":"PS5 - Watch Dogs Legion Ultimate GER USK", "price": 15, "available": 3, "availableID": 22},
-    {"name":"Switch - Assassin's Creed Rebel Collection GER USK", "price": 15, "available": 3, "availableID": 23},
-    {"name":"Switch - Compil Child of Light + Valiant Hearts GER USK", "price": 12.5, "available": 3, "availableID": 24},
-    {"name":"Switch - Immortals Fenyx Rising GER USK", "price": 15, "available": 3, "availableID": 25},
-    {"name":"Switch - Just Dance 2019 GER USK", "price": 12.5, "available": 3, "availableID": 26},
-    {"name":"Switch - Just Dance 2020 GER USK", "price": 12.5, "available": 3, "availableID": 27},
-    {"name":"Switch - Just Dance 2021 GER USK", "price": 12.5, "available": 3, "availableID": 28},
-    {"name":"Switch - Legendary Fishing GER USK", "price": 12.5, "available": 3, "availableID": 29},
-    {"name":"Switch - Mario + Rabbids Kingdom Battle Gold GER USK", "price": 15, "available": 3, "availableID": 30},
-    {"name":"Switch - Starlink Starter Pack GER USK", "price": 27.5, "available": 3, "availableID": 31},
-    {"name":"Wii U - Just Dance 2019 GER USK", "price": 12.5, "available": 3, "availableID": 32},
-    {"name":"XBOX ONE - Assassin's Creed Odyssey Gold GER USK", "price": 20, "available": 3, "availableID": 33},
-    {"name":"XBOX ONE - Assassin's Creed Origins GER USK", "price": 12.5, "available": 3, "availableID": 33},
-    {"name":"XBOX ONE - Compil Assassin's Creed Origins+Odyssey GER USK", "price": 20, "available": 3, "availableID": 34},
-    {"name":"XBOX ONE - Steep X Games Gold GER USK", "price": 12.5, "available": 3, "availableID": 35},
-    {"name":"XBOX ONE - The Devision 2 Gold Edition GER USK", "price": 12.5, "available": 3, "availableID": 36},
-    {"name":"XBOX X - Assassin's Creed Valhalla GER USK", "price": 12.5, "available": 3, "availableID": 37},
-    {"name":"XBOX X - Immortals Fenyx Rising GER USK", "price": 12.5, "available": 3, "availableID": 38},
-    {"name":"XBOX X - Immortals Fenyx Rising Gold GER USK", "price": 15, "available": 3, "availableID": 38},
-    {"name":"XBOX X - Just Dance 2021 GER USK", "price": 12.5, "available": 3, "availableID": 39},
-    {"name":"XBOX X - Watch Dogs Legion GER USK", "price": 12.5, "available": 3, "availableID": 40},
-    {"name":"XBOX X - Watch Dogs Legion Ultimate GER USK", "price": 20, "available": 3, "availableID": 40}
-  ]
+    "available": 13,
+    "banner": false,
+    "closes": "26 11 2020",
+    "games": [
+        {
+            "available": 3,
+            "availableID": 1,
+            "name": "PC - Anno 1800 K\u00f6nigsedition GER USK",
+            "price": 5
+        },
+        {
+            "available": 3,
+            "availableID": 2,
+            "name": "PC - Anno 1800 Sonderausgabe Edition GER USK",
+            "price": 5
+        },
+        {
+            "available": 3,
+            "availableID": 3,
+            "name": "PC - Anno History Edition GER USK",
+            "price": 5
+        },
+        {
+            "available": 1,
+            "availableID": 4,
+            "name": "PC - Assassin's Creed Valhalla GER USK",
+            "price": 5
+        },
+        {
+            "available": 3,
+            "availableID": 5,
+            "name": "PC - Immortals Fenyx Rising GER USK",
+            "price": 5
+        },
+        {
+            "available": 3,
+            "availableID": 6,
+            "name": "PC - Watch Dogs Legion GER USK",
+            "price": 5
+        },
+        {
+            "available": 3,
+            "availableID": 7,
+            "name": "PS4 - Assassin's Creed Odyssey GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 8,
+            "name": "PS4 - Assassin's Creed Rouge HD GER",
+            "price": 12.5
+        },
+        {
+            "available": 1,
+            "availableID": 9,
+            "name": "PS4 - Assassin's Creed Valhalla GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 1,
+            "availableID": 9,
+            "name": "PS4 - Assassin's Creed Valhalla Ultimate GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 10,
+            "name": "PS4 - Compil Assasin's Creed Origins+Odyssey GER USK",
+            "price": 20
+        },
+        {
+            "available": 3,
+            "availableID": 11,
+            "name": "PS4 - Far Cry 5 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 12,
+            "name": "PS4 - Ghost Recon Breakpoint GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 13,
+            "name": "PS4 - Immortals Fenyx Rising GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 13,
+            "name": "PS4 - Immortals Fenyx Rising Gold GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 14,
+            "name": "PS4 - Just Dance 2020 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 15,
+            "name": "PS4 - Just Dance 2021 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 16,
+            "name": "PS4 - South Park The Fractured But Whole GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 17,
+            "name": "PS4 - Steep X Games Gold GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 2,
+            "availableID": 18,
+            "name": "PS4 - Watch Dogs Legion GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 2,
+            "availableID": 18,
+            "name": "PS4 - Watch Dogs Legion Ultimate GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 19,
+            "name": "PS5 - Assassin's Creed Valhalla GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 19,
+            "name": "PS5 - Assassin's Creed Valhalla Ultimate GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 20,
+            "name": "PS5 - Immortals Fenyx Rising GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 20,
+            "name": "PS5 - Immortals Fenyx Rising Gold GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 21,
+            "name": "PS5 - Just Dance 2021 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 22,
+            "name": "PS5 - Watch Dogs Legion GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 22,
+            "name": "PS5 - Watch Dogs Legion Ultimate GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 23,
+            "name": "Switch - Assassin's Creed Rebel Collection GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 24,
+            "name": "Switch - Compil Child of Light + Valiant Hearts GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 2,
+            "availableID": 25,
+            "name": "Switch - Immortals Fenyx Rising GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 26,
+            "name": "Switch - Just Dance 2019 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 2,
+            "availableID": 27,
+            "name": "Switch - Just Dance 2020 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 28,
+            "name": "Switch - Just Dance 2021 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 29,
+            "name": "Switch - Legendary Fishing GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 30,
+            "name": "Switch - Mario + Rabbids Kingdom Battle Gold GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 31,
+            "name": "Switch - Starlink Starter Pack GER USK",
+            "price": 27.5
+        },
+        {
+            "available": 3,
+            "availableID": 32,
+            "name": "Wii U - Just Dance 2019 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 33,
+            "name": "XBOX ONE - Assassin's Creed Odyssey Gold GER USK",
+            "price": 20
+        },
+        {
+            "available": 3,
+            "availableID": 33,
+            "name": "XBOX ONE - Assassin's Creed Origins GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 34,
+            "name": "XBOX ONE - Compil Assassin's Creed Origins+Odyssey GER USK",
+            "price": 20
+        },
+        {
+            "available": 3,
+            "availableID": 35,
+            "name": "XBOX ONE - Steep X Games Gold GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 36,
+            "name": "XBOX ONE - The Devision 2 Gold Edition GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 37,
+            "name": "XBOX X - Assassin's Creed Valhalla GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 38,
+            "name": "XBOX X - Immortals Fenyx Rising GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 38,
+            "name": "XBOX X - Immortals Fenyx Rising Gold GER USK",
+            "price": 15
+        },
+        {
+            "available": 3,
+            "availableID": 39,
+            "name": "XBOX X - Just Dance 2021 GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 40,
+            "name": "XBOX X - Watch Dogs Legion GER USK",
+            "price": 12.5
+        },
+        {
+            "available": 3,
+            "availableID": 40,
+            "name": "XBOX X - Watch Dogs Legion Ultimate GER USK",
+            "price": 20
+        }
+    ],
+    "name": "XMAS GAME ORDER"
 }
