@@ -1,10 +1,10 @@
 {
-    "available": 13,
+    "available": 7,
     "banner": false,
     "closes": "26 11 2020",
     "games": [
         {
-            "available": 3,
+            "available": 2,
             "availableID": 1,
             "name": "PC - Anno 1800 K\u00f6nigsedition GER USK",
             "price": 5
@@ -22,13 +22,13 @@
             "price": 5
         },
         {
-            "available": 1,
+            "available": 0,
             "availableID": 4,
             "name": "PC - Assassin's Creed Valhalla GER USK",
             "price": 5
         },
         {
-            "available": 3,
+            "available": 1,
             "availableID": 5,
             "name": "PC - Immortals Fenyx Rising GER USK",
             "price": 5
@@ -64,7 +64,7 @@
             "price": 15
         },
         {
-            "available": 3,
+            "available": 2,
             "availableID": 10,
             "name": "PS4 - Compil Assasin's Creed Origins+Odyssey GER USK",
             "price": 20
@@ -214,7 +214,7 @@
             "price": 12.5
         },
         {
-            "available": 3,
+            "available": 2,
             "availableID": 30,
             "name": "Switch - Mario + Rabbids Kingdom Battle Gold GER USK",
             "price": 15
